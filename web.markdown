@@ -8,7 +8,19 @@ I like web development because I like making things. I try to take on projects t
   
 I've spent a lot of time working with [Ruby on Rails](http://rubyonrails.org), because right now it's probably the best way to get a prototype up and running fast. That said, I've worked with a number of languages and frameworks. You can read about some of my web projects on this page, or learn more about the technologies I use (and my opinions about them) at the bottom.  
 
-* December 2009 - present
+* May - August 2011
+
+  ### [Google Identity Toolkit](http://code.google.com/apis/identitytoolkit/)
+  
+  I was an [APM intern](http://www.andrewmunn.com/2011/02/why-apm/) at Google in 2011, and I worked on the Google Identity Toolkit...
+  
+* May 2011 - present
+
+  ### [eathckr](http://eathckr.com)
+  
+  I'm working with [Jon Staff]() to change the way people eat...
+
+* December 2009 - December 2010
   
   ### [CommonPlace](http://fallschurch.ourcommonplace.com)
       
@@ -16,12 +28,6 @@ I've spent a lot of time working with [Ruby on Rails](http://rubyonrails.org), b
       
   I built the original prototype of the site in PHP last winter, and I learned Rails by building the current site with [Max Tilford](http://twopoxies.net). Currently, I work mostly on the front end, improving the user experience and turning our designer [Mark Malazarte's](http://markmalazarte.com/) Photoshop mockups into HTML and CSS (via Haml and Sass).
       
-* August 2010 - present
-  
-  ### [The CommonPlace Blog](http://commonplaceusa.com)
-  
-  This site contains some more info about the CommonPlace project. I made the blog from scratch in Rails. 
-
 * May - August 2010
   
   ### [Media Cloud](http://mediacloud.org)
@@ -50,9 +56,19 @@ I've spent a lot of time working with [Ruby on Rails](http://rubyonrails.org), b
 
   ### [This site](http://jon-levine.com/)
   
-  I put up this site in large part to learn system administration. I bought an Ubuntu VPS on [<del>prgmr</del>](http://prgmr.com) [AWS](http://aws.amazon.com) so that I could spend my spare time configuring [<del>nginx</del>](http://nginx.org/) [Apache](http://httpd.apache.org/), [Phusion Passenger](http://www.modrails.com/), [RVM](http://rvm.beginrescueend.com/), and lots of other fun tools.
+  The current version of this site was built in [Jekyll](http://jekyllrb.com/) using
+  [Markdown](http://en.wikipedia.org/wiki/Markdown) and hosted on [GitHub Pages](http://pages.github.com/).
+  You can view the source on my [GitHub profile](https://github.com/tlozoot/tlozoot.github.com). The funky
+  shapes in the background are drawn with [D3](http://mbostock.github.com/d3/).
   
-  I also wanted to play around with [Sammy](http://code.quirkey.com/sammy/), a cool new JavaScript library for implementing (effectively) client-side controllers. The back-end is in [Sinatra](http://www.sinatrarb.com/), though  there's not much dynamic content.
+  Previous versions of this site used complicated things like [Sinatra](http://www.sinatrarb.com/),
+  [Sammy](http://code.quirkey.com/sammy/), [Phusion Passenger](http://www.modrails.com/), 
+  [Apache](http://httpd.apache.org/), and [AWS](http://aws.amazon.com)....
+  
+  
+  <!-- I put up this site in large part to learn system administration. I bought an Ubuntu VPS on [<del>prgmr</del>](http://prgmr.com) [AWS](http://aws.amazon.com) so that I could spend my spare time configuring [<del>nginx</del>](http://nginx.org/) [Apache](http://httpd.apache.org/), [Phusion Passenger](http://www.modrails.com/), [RVM](http://rvm.beginrescueend.com/), and lots of other fun tools.
+  
+  I also wanted to play around with [Sammy](http://code.quirkey.com/sammy/), a cool new JavaScript library for implementing (effectively) client-side controllers. The back-end is in [Sinatra](http://www.sinatrarb.com/), though  there's not much dynamic content. -->
 {: .projects }
 
 Check out even more computer-related projects on the [linguistics](/ling.html) page!
@@ -60,7 +76,7 @@ Check out even more computer-related projects on the [linguistics](/ling.html) p
 And just for fun, a few opinions:
 
 * My favorite programming languages are Ruby, OCaml, and JavaScript.
-* Some of my favorite tools are Rails, Sinatra, Haml, Sass, Textile, JQuery, Sammy, Heroku, git, GitHub, and TextMate.
-* I also like Perl, Python, Flask, PHP, C, plain old HTML and CSS, Apache, Capistrano, RVM, nginx, Phusion Passenger, vim...
+* Some of my favorite tools are Rails, Sinatra, Jekyll, Haml, Sass, Textile, JQuery, Sammy, Heroku, git, GitHub, and TextMate.
+* I also like using Python, Flask, Perl, PHP, C, plain old HTML and CSS, Apache, Capistrano, RVM, nginx, Phusion Passenger, and vim...
 {: .minilist }
 
