@@ -49,22 +49,59 @@ nav {
 	margin: 20px 0 20px 20px;
 }
 
-nav a {
+nav > a {
 	display: block;
 	padding: 10px;
 }
 
-nav a.selected {
+nav > a.selected {
 	color: white;
 }
 
-#main {
-	width: 800px;
+body.dense {
+	font-size: 0.9em;
+}
+body.dense header {
+	padding: 10px 10px 10px 175px;
+}
+body.dense nav {
+	width: 150px;
+	margin: 10px 0 10px 10px;
+}
+body.dense nav > a {
+  padding: 5px;
+}
+body.dense article {
+	padding: 10px;
+	margin-left: 166px;
+}
+body.dense ul.projects li {
+	padding: 10px;
+	margin-bottom: 0.5em;
+}
+body.dense ul.projects li h3 {
+	font-size: 1.3em;
+}
+body.dense p {
+	margin: 0.5em 0;
+}
+
+#transition {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	color: white;
+	font-size: 0.8em;
+	cursor: pointer;
+	background-color: #aaaaaa;
+	padding: 10px;
 }
 
 article {
 	margin-left: 220px;
 	padding: 20px;
+	max-width: 800px;
+	min-width: 400px;
 /*	background-color: rgba(255, 255, 255, 0.75);*/
 }
 
@@ -76,7 +113,7 @@ ul.projects {
 ul.projects li {
 	list-style-type: none;
 	padding: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 1em;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	
 	background-color: rgba(0, 0, 0, 0.1);
