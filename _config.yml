@@ -1,0 +1,11 @@
+safe: true
+titles:
+  - Home
+  - Web Projects
+  - Linguistics
+  - Personal
+urls:
+  - /
+  - /cs.html
+  - /ling.html
+  - /personal.html
