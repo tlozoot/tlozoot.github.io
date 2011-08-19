@@ -39,7 +39,7 @@ var n = 2, // number of layers
     data1 = d3.layout.stack().offset("wiggle")(stream_layers(n, m));
     // color = d3.interpolateRgb("#aad", "#556");
 
-var w = $(document).width(),
+var w = $(window).width(),
     h = $(window).height() / 2,
     mx = m - 1,
     my = d3.max(data0.concat(data1), function(d) {
@@ -54,13 +54,13 @@ var area = d3.svg.area()
     .y1(function(d) { return h - (d.y + d.y0) * h / my; });
 
 var vis = d3.select("#chart")
-  .append("svg:svg")
+    .append("svg:svg")
     .attr("width", w)
     .attr("height", h);
 
 vis.selectAll("path")
     .data(data0)
-  .enter().append("svg:path")
+    .enter().append("svg:path")
     .style("fill", function() { return color(Math.random()); })
     .attr("d", area);
 
