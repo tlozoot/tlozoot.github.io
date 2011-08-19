@@ -27,19 +27,18 @@
   </head>
   <body>
     <header>
-      <a href=''>Jon Levine<span id='title_small'>.com</span></a> &raquo;
+      <a href='/'>Jon Levine<span id='title_small'>.com</span></a> &raquo;
       {{ page.title }}
     </header>
-    <div id="main">
-      <nav>
-        {% for t in site.titles %}
-        <a href={{site.urls[forloop.index0]}} {% if page.title == t %}
-            style="background-color: #{{page.color}};" class="selected"
-          {% endif %}>{{t}}</a>
-        {% endfor %}
-      </nav>
-      <article>{{ content }}</article>
-    </div>
+    <nav>
+      {% for t in site.titles %}
+      <a href={{site.urls[forloop.index0]}} {% if page.title == t %}
+          style="background-color: #{{page.color}};" class="selected"
+        {% endif %}>{{t}}</a>
+      {% endfor %}
+    </nav>
+    <!-- <div id="transition" onclick="transition()">Transition background</div> -->
+    <article>{{ content }}</article>
     <div id="chart"></div>
     <script type='text/javascript'>
       var color = d3.interpolateRgb("#aaa", "#{{page.color}}");

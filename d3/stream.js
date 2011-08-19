@@ -76,3 +76,5 @@ function transition() {
       .attr("d", area);
 }
 
+transition();
+
