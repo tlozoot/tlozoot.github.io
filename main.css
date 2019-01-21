@@ -1,7 +1,14 @@
-html, body, h1, h2, h3, p {
+/********* BEGIN CSS RESET *******************/
+
+html, body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
 }
+
+/*********** END CSS RESET ********************/
+
+
+/********** BEGIN HEADER CSS ******************/
 
 html, body {
   font-size: 18px;
@@ -14,10 +21,10 @@ html, body {
   background-color: #F4E9E6;
   background-image: 
     linear-gradient(
-      rgba(255, 255, 255, 0.60), 
+      rgba(255, 255, 255, 0.70), 
       rgba(255, 255, 255, 0.00)
     ),
-    url('/images/bench3.jpg');
+    url('/images/bench2.jpg');
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,55 +32,143 @@ html, body {
 }
 
 h1 {  
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Bungee Shade', cursive;
   font-weight: normal;
+  text-transform: uppercase;
   color: #303d1a;
   text-align: center;
   margin: 0;
   padding: 1em 0.5em 5em 0.5em;
-  font-size: 4.5em;
+  font-size: 5.5em;
 }
 
 @media screen and (max-width: 1000px) { 
   h1 {
     font-size: 6em;
-    padding-top: 2.3em;
+    padding-top: 1.5em;
   }
 }
 
+/********** END HEADER CSS ******************/
 
-h2 {
-  font-family: 'Vesper Libre', cursive;
-  font-weight: 700;
-  text-align: center;
-  min-width: 370px;
-  font-size: 2em;
-  padding: 1em 0.5em 0.5em 0.5em;
+
+/********** BEGIN BODY CSS ******************/
+
+.section {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
 
-.section p {
-  font-family: 'Vesper Libre', serif;
+.cell {
+  flex: 1;
+  margin: 1em;
+}
+
+.image {
+  padding-bottom: 1em;
+}
+
+.cell .vert {
+  display: flex;
+  height: 100%;
+}
+
+.section h2 {
+  flex: 1;
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  font-size: 3.5em;
+  line-height: 1.2em;
+  margin: auto;
+}
+
+.section ul, .section p {
+  font-family: 'Arvo', serif;
   font-weight: 400;
   line-height: 1.6em;
-  padding: 0 2em;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  justify-content: normal;
+  padding-left: 1em;
 }
 
-body div#where {
-  /*margin-top: 1000px;*/
+.section img {
+  border: 0.5em solid black;
+  width: 100%;
+  height: 100%;
 }
 
-body div.section:nth-child(even) {
+
+
+.section:nth-child(even) img  {
+  border-color: #800020;
+}
+.section:nth-child(odd) img {
+  border-color: #3A4920;
+}
+
+.section:nth-child(even) li  {
+  border-color: #5b0016;
+}
+.section:nth-child(odd) li {
+  border-color: #303d1a;
+}
+
+
+.section ul {
+  list-style: circle;
+  /*text-align: center;*/
+  line-height: 2em;
+/*  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+*/
+}
+
+.section li {
+  /*flex: 2;*/
+  padding: 0.5em 0.5em;
+  margin: 0.2em 0;
+  /*border-radius: 2em;*/
+  /*border: 0.08em solid black;*/
+}
+
+@media screen and (max-width: 1000px) { 
+  .section {
+    flex-direction: column;
+    font-size: 1.3em;
+    padding: 2em 0;
+  }
+
+  .section h2 {
+    font-size: 5.5em;
+  }
+
+  .cell {
+    margin: 1em 3em 2em 3em;
+  }
+  .h2 {
+    margin: 1em;
+  }
+}
+
+.section:nth-child(even) {
   background-color: #F4E9E6;
-  /*color: #800020;*/
   color: #5b0016;
 }
-
-body div.section:nth-child(odd) {
+.section:nth-child(odd) {
   background-color: #CACEAB;
-  /*color: #3A4920;*/
   color: #303d1a;
 }
+
+/*.section:nth-child(even) li {
+  background-color: #800020;
+  color: #F4E9E6;
+}
+.section:nth-child(odd) li {
+  background-color: #3A4920;
+  color: #CACEAB;
+}*/
+
