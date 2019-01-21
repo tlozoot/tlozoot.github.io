@@ -32,20 +32,49 @@ html, body {
 }
 
 h1 {  
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Bungee Outline', cursive;
   font-weight: normal;
   text-transform: uppercase;
-  color: #303d1a;
+  color: white;
   text-align: center;
   margin: 0;
   padding: 1em 0.5em 5em 0.5em;
   font-size: 5.5em;
 }
+h1 span {  
+  /*text-shadow: -8px 8px 0px #3A4920;*/
+  /*text-shadow: 2px -2px 0px #3A4920;*/
+}
+
+.shadow {
+  position: relative;
+}
+.shadow div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.shadow .top {
+  font-family: Bungee Hairline;
+  text-shadow: -1px 1px 0px #3A4920;
+  z-index: 1;
+  color: #3A4920;
+}
+
+.shadow .bottom {
+  font-family: Bungee;
+  z-index: 0;
+  color: white;
+  text-shadow: -0.08em 0.08em 0px #3A4920;
+}
 
 @media screen and (max-width: 1000px) { 
   h1 {
-    font-size: 6em;
-    padding-top: 1.5em;
+    font-size: 7.5em;
+    padding-top: 1em;
   }
 }
 
@@ -71,9 +100,22 @@ h1 {
   padding-bottom: 1em;
 }
 
-.cell .vert {
+.faq {
   display: flex;
-  height: 100%;
+  flex-direction: row;
+  margin-bottom: 0.5em;
+}
+
+.faq .question {
+  flex: 1;
+  text-align: right;
+  text-transform: uppercase;
+  margin-right: 1em;
+  font-weight: 700;
+}
+
+.faq .answer {
+  flex: 3;
 }
 
 .section h2 {
@@ -87,7 +129,7 @@ h1 {
   margin: auto;
 }
 
-.section ul, .section p {
+.section {
   font-family: 'Arvo', serif;
   font-weight: 400;
   line-height: 1.6em;
@@ -138,19 +180,22 @@ h1 {
 @media screen and (max-width: 1000px) { 
   .section {
     flex-direction: column;
-    font-size: 1.3em;
+    font-size: 2em;
     padding: 2em 0;
   }
 
   .section h2 {
-    font-size: 5.5em;
+    /*font-size: 2em;*/
   }
 
   .cell {
-    margin: 1em 3em 2em 3em;
+    margin: 1em 1em 2em 1em;
   }
   .h2 {
     margin: 1em;
+  }
+  .faq .answer {
+    flex: 2;
   }
 }
 
