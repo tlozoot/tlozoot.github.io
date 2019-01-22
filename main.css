@@ -32,7 +32,6 @@ html, body {
 }
 
 h1 {  
-  font-family: 'Bungee Outline', cursive;
   font-weight: normal;
   text-transform: uppercase;
   color: white;
@@ -40,10 +39,6 @@ h1 {
   margin: 0;
   padding: 1em 0.5em 5em 0.5em;
   font-size: 5.5em;
-}
-h1 span {  
-  /*text-shadow: -8px 8px 0px #3A4920;*/
-  /*text-shadow: 2px -2px 0px #3A4920;*/
 }
 
 .shadow {
