@@ -1,4 +1,0 @@
----
-title: Wilkommen
----
-Coming soon!
