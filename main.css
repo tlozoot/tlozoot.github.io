@@ -54,16 +54,16 @@ h1 {
 
 .shadow .top {
   font-family: Bungee Hairline;
-  text-shadow: -1px 1px 0px #3A4920;
+  text-shadow: -1px 1px 0px #4d563e;
   z-index: 1;
-  color: #3A4920;
+  color: #4d563e;
 }
 
 .shadow .bottom {
   font-family: Bungee;
   z-index: 0;
   color: white;
-  text-shadow: -0.08em 0.08em 0px #3A4920;
+  text-shadow: -0.08em 0.08em 0px #4d563e;
 }
 
 @media screen and (max-width: 1000px) { 
@@ -79,7 +79,11 @@ h1 {
 /********** BEGIN BODY CSS ******************/
 
 .section {
-  padding: 1em;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  line-height: 1.6em;
+
+  /*padding: 1em;*/
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -89,10 +93,6 @@ h1 {
 .cell {
   flex: 1;
   margin: 1em;
-}
-
-.image {
-  padding-bottom: 1em;
 }
 
 .faq {
@@ -113,6 +113,10 @@ h1 {
   flex: 3;
 }
 
+.cell.h2 {
+  margin: 8.7em 0;
+}
+
 .section h2 {
   flex: 1;
   font-family: 'Monoton', cursive;
@@ -120,15 +124,8 @@ h1 {
   font-weight: normal;
   text-align: center;
   font-size: 3.5em;
-  line-height: 1.2em;
+  line-height: 1.3em;
   margin: auto;
-}
-
-.section {
-  font-family: 'Arvo', serif;
-  font-weight: 400;
-  line-height: 1.6em;
-  padding-left: 1em;
 }
 
 .section img {
@@ -137,6 +134,60 @@ h1 {
   height: 100%;
 }
 
+.image {
+  /*background-size: cover;*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*min-height: 300px;*/
+  margin: 0em;
+  padding: 0;
+}
+
+#where svg {
+  margin: 9.4em 11.2em;
+}
+
+#rsvp .image {
+  background-image:      
+    radial-gradient(
+      rgba(202, 206, 171, 0.30), 
+      rgba(202, 206, 171, 1.00)
+    ),
+    url("/images/rsvp2.png");
+  /*background-size: contain;*/
+  background-position: center;
+  background-size: 83%; 
+  background-repeat: no-repeat;
+}
+
+#about .image {
+  background-image:      
+    radial-gradient(
+      rgba(244, 233, 230, 0.05), 
+      rgba(244, 233, 230, 0.40)
+    ),
+    url("/images/rock2.jpg");
+  /*background-size: contain;*/
+  background-position: center;
+  background-size: 91%; 
+  background-repeat: no-repeat;  
+}
+
+.image > p {
+  font-family: Bungee;
+  color: #4d563e;
+  font-size: 3em;
+  text-align: center;
+  line-height: 7.3em;
+}
+
+.faq-parent {
+  padding: 3em 0;
+}
+
+.vert > p {
+  margin:  7.4em 0px;
+}
 
 
 .section:nth-child(even) img  {
@@ -186,11 +237,24 @@ h1 {
   .cell {
     margin: 1em 1em 2em 1em;
   }
-  .h2 {
+  .cell.h2 {
     margin: 1em;
+  }
+  .cell.faq-parent {
+    margin: 0 1em;
+  }
+  .cell.image {
+    margin: 1em;
+    min-height: 600px;
+  }
+  .vert > p {
+    margin: 1em 0;
   }
   .faq .answer {
     flex: 2;
+  }
+  .image > p {
+    line-height: 5.3em;
   }
 }
 
