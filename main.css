@@ -87,7 +87,7 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: stretch;
+  align-items: center;
 }
 
 .cell {
@@ -122,7 +122,9 @@ h1 {
 }
 
 #stay .vert > p {
-  margin: 4.6em 0;
+  margin: 2em 0;
+  padding: 0 1em;
+  text-align: center;
 }
 
 .section h2 {
@@ -143,16 +145,18 @@ h1 {
 }
 
 .image {
-  /*background-size: cover;*/
-  /*background-position: center;*/
-  /*background-repeat: no-repeat;*/
-  /*min-height: 300px;*/
   margin: 0em;
   padding: 0;
+  height: 18em;
 }
 
 #where svg {
   margin: 9.4em 11.2em;
+}
+
+#rsvp .image, #registry .image {
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #rsvp .image {
@@ -162,10 +166,17 @@ h1 {
       rgba(202, 206, 171, 1.00)
     ),
     url("/images/rsvp3.png");
-  /*background-size: contain;*/
-  background-position: center;
-  background-size: 83%; 
-  background-repeat: no-repeat;
+    background-size: 83%; 
+}
+
+#registry .image {
+  background-image:      
+    radial-gradient(
+      rgba(202, 206, 171, 0.30), 
+      rgba(202, 206, 171, 1.00)      
+    ),
+    url("/images/galapagos2.jpg");
+  background-size: 100%; 
 }
 
 #about .image {
@@ -175,7 +186,6 @@ h1 {
       rgba(244, 233, 230, 0.40)
     ),
     url("/images/rock2.jpg");
-  /*background-size: contain;*/
   background-position: center;
   background-size: 91%; 
   background-repeat: no-repeat;  
@@ -187,10 +197,6 @@ h1 {
   font-size: 3em;
   text-align: center;
   line-height: 7.3em;
-}
-
-.faq-parent {
-  padding: 3em 0;
 }
 
 .vert > p {
@@ -215,20 +221,12 @@ h1 {
 
 .section ul {
   list-style: circle;
-  /*text-align: center;*/
   line-height: 2em;
-/*  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-*/
 }
 
 .section li {
-  /*flex: 2;*/
   padding: 0.5em 0.5em;
   margin: 0.2em 0;
-  /*border-radius: 2em;*/
-  /*border: 0.08em solid black;*/
 }
 
 @media screen and (max-width: 1000px) { 
@@ -238,12 +236,8 @@ h1 {
     padding: 2em 0;
   }
 
-  .section h2 {
-    /*font-size: 2em;*/
-  }
-
   .cell {
-    margin: 1em 1em 2em 1em;
+    margin: 1em;
   }
   .cell p {
     font-size: 0.5em;
@@ -260,12 +254,15 @@ h1 {
   .cell.image {
     margin: 1em;
     min-height: 600px;
+    width: 100%;
   }
   .vert > p {
     margin: 0.5em 0;
+    text-align: center;
   }
   #stay .vert > p {
     margin: 0.5em 0;
+    padding: 0 0.2em;
   }
   .faq {
     font-size: 1.1em;
@@ -286,13 +283,3 @@ h1 {
   background-color: #CACEAB;
   color: #303d1a;
 }
-
-/*.section:nth-child(even) li {
-  background-color: #800020;
-  color: #F4E9E6;
-}
-.section:nth-child(odd) li {
-  background-color: #3A4920;
-  color: #CACEAB;
-}*/
-
