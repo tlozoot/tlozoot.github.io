@@ -124,7 +124,6 @@ h1 {
 #stay .vert > p {
   margin: 2em 0;
   padding: 0 1em;
-  text-align: center;
 }
 
 .section h2 {
@@ -145,18 +144,18 @@ h1 {
 }
 
 .image {
-  margin: 0em;
+  margin: 0.5em;
   padding: 0;
   height: 18em;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%
+
 }
 
 #where svg {
   margin: 9.4em 11.2em;
-}
-
-#rsvp .image, #registry .image {
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #rsvp .image {
@@ -166,7 +165,7 @@ h1 {
       rgba(202, 206, 171, 1.00)
     ),
     url("/images/rsvp3.png");
-    background-size: 83%; 
+    /*background-size: 83%; */
 }
 
 #registry .image {
@@ -176,7 +175,7 @@ h1 {
       rgba(202, 206, 171, 1.00)      
     ),
     url("/images/galapagos2.jpg");
-  background-size: 100%; 
+  /*background-size: 100%; */
 }
 
 #about .image {
@@ -186,9 +185,7 @@ h1 {
       rgba(244, 233, 230, 0.40)
     ),
     url("/images/rock2.jpg");
-  background-position: center;
-  background-size: 91%; 
-  background-repeat: no-repeat;  
+  /*background-size: 100%; */
 }
 
 .image > p.overlay {
@@ -201,6 +198,7 @@ h1 {
 
 .vert > p {
   margin:  7.4em 0px;
+  text-align: center;
 }
 
 
@@ -232,18 +230,19 @@ h1 {
 @media screen and (max-width: 1000px) { 
   .section {
     flex-direction: column;
-    font-size: 2em;
+    /*font-size: 2em;*/
     padding: 2em 0;
   }
 
   .cell {
-    margin: 1em;
+    margin: 1em 2em;
   }
   .cell p {
-    font-size: 0.5em;
+    font-size: 1em;
   }
   .cell.h2 {
     margin: 1em;
+    font-size: 2em;
   }
   #stay .cell.h2 {
     margin: 1em;
@@ -253,24 +252,27 @@ h1 {
   }
   .cell.image {
     margin: 1em;
-    min-height: 600px;
+    height: 35em;
     width: 100%;
   }
   .vert > p {
     margin: 0.5em 0;
     text-align: center;
+    line-height: 1.5em;
   }
   #stay .vert > p {
     margin: 0.5em 0;
     padding: 0 0.2em;
   }
   .faq {
-    font-size: 1.1em;
+    font-size: 2em;
+    line-height: 1.5em;
   }
   .faq .answer {
     flex: 2;
   }
   .image > p.overlay {
+    font-size: 6em;
     line-height: 5.3em;
   }
 }
