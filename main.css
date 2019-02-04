@@ -24,7 +24,7 @@ html, body {
       rgba(255, 255, 255, 0.70), 
       rgba(255, 255, 255, 0.00)
     ),
-    url('/images/bench2.jpg');
+    url('/images/bench4.jpg');
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,6 +117,14 @@ h1 {
   margin: 8.7em 0;
 }
 
+#stay > .cell.h2 {
+  margin: 5em 0;
+}
+
+#stay .vert > p {
+  margin: 4.6em 0;
+}
+
 .section h2 {
   flex: 1;
   font-family: 'Monoton', cursive;
@@ -153,7 +161,7 @@ h1 {
       rgba(202, 206, 171, 0.30), 
       rgba(202, 206, 171, 1.00)
     ),
-    url("/images/rsvp2.png");
+    url("/images/rsvp3.png");
   /*background-size: contain;*/
   background-position: center;
   background-size: 83%; 
@@ -173,7 +181,7 @@ h1 {
   background-repeat: no-repeat;  
 }
 
-.image > p {
+.image > p.overlay {
   font-family: Bungee;
   color: #4d563e;
   font-size: 3em;
@@ -237,7 +245,13 @@ h1 {
   .cell {
     margin: 1em 1em 2em 1em;
   }
+  .cell p {
+    font-size: 0.5em;
+  }
   .cell.h2 {
+    margin: 1em;
+  }
+  #stay .cell.h2 {
     margin: 1em;
   }
   .cell.faq-parent {
@@ -248,12 +262,18 @@ h1 {
     min-height: 600px;
   }
   .vert > p {
-    margin: 1em 0;
+    margin: 0.5em 0;
+  }
+  #stay .vert > p {
+    margin: 0.5em 0;
+  }
+  .faq {
+    font-size: 1.1em;
   }
   .faq .answer {
     flex: 2;
   }
-  .image > p {
+  .image > p.overlay {
     line-height: 5.3em;
   }
 }
