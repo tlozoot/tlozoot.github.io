@@ -11,8 +11,11 @@ html, body, h1, h2, h3, p, ul, li {
 /********** BEGIN HEADER CSS ******************/
 
 html, body {
-  font-size: 18px;
   height: 100%;
+}
+
+body {
+  font-size: 18px;
 }
 
 .header {
@@ -150,8 +153,11 @@ h1 {
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%
+  background-size: 100%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #where svg {
@@ -230,19 +236,17 @@ h1 {
 @media screen and (max-width: 1000px) { 
   .section {
     flex-direction: column;
-    /*font-size: 2em;*/
+    font-size: 2.3rem;
     padding: 2em 0;
   }
 
   .cell {
-    margin: 1em 2em;
+    margin: 1em;
   }
   .cell p {
-    font-size: 1em;
   }
   .cell.h2 {
     margin: 1em;
-    font-size: 2em;
   }
   #stay .cell.h2 {
     margin: 1em;
@@ -252,28 +256,27 @@ h1 {
   }
   .cell.image {
     margin: 1em;
-    height: 35em;
+    height: 20em;
     width: 100%;
   }
   .vert > p {
     margin: 0.5em 0;
     text-align: center;
     line-height: 1.5em;
+    font-size: 1em;
   }
   #stay .vert > p {
     margin: 0.5em 0;
     padding: 0 0.2em;
   }
   .faq {
-    font-size: 2em;
     line-height: 1.5em;
   }
   .faq .answer {
     flex: 2;
   }
   .image > p.overlay {
-    font-size: 6em;
-    line-height: 5.3em;
+    font-size: 3em;
   }
 }
 
