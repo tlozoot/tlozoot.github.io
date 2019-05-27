@@ -167,10 +167,10 @@ h1 {
 #rsvp .image {
   background-image:      
     radial-gradient(
-      rgba(202, 206, 171, 0.30), 
-      rgba(202, 206, 171, 1.00)
+      rgba(202, 206, 171, 0.3), 
+      rgba(202, 206, 171, 0.7)
     ),
-    url("/images/rsvp3.png");
+    url("/images/rsvp-screen.png");
     /*background-size: 83%; */
 }
 
@@ -187,20 +187,32 @@ h1 {
 #about .image {
   background-image:      
     radial-gradient(
-      rgba(244, 233, 230, 0.05), 
-      rgba(244, 233, 230, 0.40)
+      rgba(244, 233, 230, 0.10), 
+      rgba(244, 233, 230, 0.30)
     ),
     url("/images/rock2.jpg");
   /*background-size: 100%; */
 }
 
 .image > p.overlay {
-  font-family: Bungee;
-  color: #4d563e;
+  font-family: courier new;
+  font-weight: bold;
+  /*text-decoration: underline;*/
+  color: #373d2e;
+  text-shadow: 0 0 1em #fff;
   font-size: 3em;
   text-align: center;
   line-height: 7.3em;
 }
+
+p.overlay:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*.overlay span {
+  background-color: #4d563e;
+}*/
 
 .vert > p {
   margin:  7.4em 0px;
