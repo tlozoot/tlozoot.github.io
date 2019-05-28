@@ -149,7 +149,7 @@ h1 {
 .image {
   margin: 0.5em;
   padding: 0;
-  height: 18em;
+  height: 6em;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -167,8 +167,8 @@ h1 {
 #rsvp .image {
   background-image:      
     radial-gradient(
-      rgba(202, 206, 171, 0.3), 
-      rgba(202, 206, 171, 0.7)
+      rgba(202, 206, 171, 0.20), 
+      rgba(202, 206, 171, 0.60)
     ),
     url("/images/rsvp-screen.png");
     /*background-size: 83%; */
@@ -177,10 +177,10 @@ h1 {
 #registry .image {
   background-image:      
     radial-gradient(
-      rgba(202, 206, 171, 0.30), 
-      rgba(202, 206, 171, 1.00)      
+      rgba(202, 206, 171, 0.20), 
+      rgba(202, 206, 171, 0.60)      
     ),
-    url("/images/galapagos2.jpg");
+    url("/images/registry.png");
   /*background-size: 100%; */
 }
 
@@ -194,21 +194,27 @@ h1 {
   /*background-size: 100%; */
 }
 
-.image > p.overlay {
-  font-family: courier new;
+.image.overlay {
+  font-family: "Courier New", monospace;
   font-weight: bold;
   /*text-decoration: underline;*/
-  color: #373d2e;
+  /*color: #0000EE; #373d2e;*/
   text-shadow: 0 0 1em #fff;
   font-size: 3em;
   text-align: center;
-  line-height: 7.3em;
+  /*line-height: 7.3em;*/
 }
 
-p.overlay:hover {
+a, a:visited {
   text-decoration: underline;
-  cursor: pointer;
+  color: #0000CC;
 }
+
+a:hover, a:visited:hover {
+  /*text-decoration: none;*/
+  color: #0000FF;
+}
+
 
 /*.overlay span {
   background-color: #4d563e;
@@ -250,6 +256,10 @@ p.overlay:hover {
     flex-direction: column;
     font-size: 2.3rem;
     padding: 2em 0;
+  }
+  
+  a {
+    text-decoration: underline;
   }
 
   .cell {
