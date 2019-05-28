@@ -24,3 +24,6 @@ github_username:  tlozoot
 
 # Build settings
 markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
