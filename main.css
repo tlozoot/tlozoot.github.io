@@ -158,6 +158,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 3em;
 }
 
 #where svg {
@@ -170,7 +172,9 @@ h1 {
       rgba(202, 206, 171, 0.20), 
       rgba(202, 206, 171, 0.60)
     ),
-    url("/images/rsvp-screen.png");
+    url("/images/rsvp-crop.jpg");
+    box-shadow: 0 0 0.5em #49513e;
+    background-size: cover;
     /*background-size: 83%; */
 }
 
@@ -180,17 +184,19 @@ h1 {
       rgba(202, 206, 171, 0.20), 
       rgba(202, 206, 171, 0.60)      
     ),
-    url("/images/registry.png");
+    url("/images/registry-crop.jpg");
+    box-shadow: 0 0 0.5em #49513e;
+    background-size: cover;
   /*background-size: 100%; */
 }
 
 #about .image {
   background-image:      
-    radial-gradient(
+/*    radial-gradient(
       rgba(244, 233, 230, 0.10), 
       rgba(244, 233, 230, 0.30)
     ),
-    url("/images/rock2.jpg");
+*/    url("/images/rock2.jpg");
   /*background-size: 100%; */
 }
 
@@ -200,9 +206,8 @@ h1 {
   /*text-decoration: underline;*/
   /*color: #0000EE; #373d2e;*/
   text-shadow: 0 0 1em #fff;
-  font-size: 3em;
   text-align: center;
-  /*line-height: 7.3em;*/
+  line-height: 5.5em;
 }
 
 a, a:visited {
@@ -280,6 +285,7 @@ a:hover, a:visited:hover {
     margin: 1em;
     height: 20em;
     width: 100%;
+    font-size: 3em;
   }
   .vert > p {
     margin: 0.5em 0;
@@ -297,8 +303,8 @@ a:hover, a:visited:hover {
   .faq .answer {
     flex: 2;
   }
-  .image > p.overlay {
-    font-size: 3em;
+  .image.overlay {
+    line-height: 5.5em;
   }
 }
 
