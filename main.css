@@ -96,6 +96,7 @@ h1 {
 .cell {
   flex: 1;
   margin: 1em;
+  position: relative;
 }
 
 .faq {
@@ -138,6 +139,25 @@ h1 {
   font-size: 3.5em;
   line-height: 1.3em;
   margin: auto;
+}
+
+.section h2 span {
+  position: relative;
+}
+
+.new {
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  line-height: 0.625em;
+  font-size: 0.28em;
+  position: absolute;
+  top: 0;
+  right: -10%;
+  background-color: red;
+  border-radius: 2em;
+  padding: 0.5em;
+  color: white;
+  transform: rotate(15deg);
 }
 
 .section img {
@@ -271,6 +291,9 @@ a:hover, a:visited:hover {
     margin: 1em;
   }
   .cell p {
+  }
+  .new {
+    /*right: -2.5em;*/
   }
   .cell.h2 {
     margin: 1em;
